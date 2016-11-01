@@ -2,8 +2,8 @@
 
 #define MAVLINK_MSG_ID_SENS_POWER_BOARD 212
 
-MAVPACKED(
-typedef struct __mavlink_sens_power_board_t {
+typedef struct MAVLINK_PACKED __mavlink_sens_power_board_t
+{
  uint64_t timestamp; /*< Timestamp*/
  float pwr_brd_system_volt; /*< Power board system voltage*/
  float pwr_brd_servo_volt; /*< Power board servo voltage*/
@@ -16,7 +16,7 @@ typedef struct __mavlink_sens_power_board_t {
  float pwr_brd_aux_amp; /*< Power board aux current sensor*/
  uint8_t pwr_brd_status; /*< Power board status register*/
  uint8_t pwr_brd_led_status; /*< Power board leds status*/
-}) mavlink_sens_power_board_t;
+} mavlink_sens_power_board_t;
 
 #define MAVLINK_MSG_ID_SENS_POWER_BOARD_LEN 46
 #define MAVLINK_MSG_ID_SENS_POWER_BOARD_MIN_LEN 46
